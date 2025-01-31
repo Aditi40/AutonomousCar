@@ -85,7 +85,7 @@ def eval_genomes(genomes, config):
             # Check for collisions and apply penalties
             for obstacle in cars + walls + humans:
                 if controllable_car.check_collision(obstacle):
-                    penalty += 1  # Penalty for collision (you can adjust this value)
+                    penalty += 1 
 
             # Calculate fitness as the distance the car has traveled minus the penalty
             fitness = controllable_car.position[0] - penalty
